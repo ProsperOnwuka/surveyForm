@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Prosper Onwuka">
+  <meta name="description" content="This is the official survey form for LodgeMania">
+  <link rel="stylesheet" href="styles.css">
+  <title>A Lodge Request Form</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">LodgeMania</h1>
+    <p id="description"><em>Let us help you find a lodge today!</em></p>
+  </header>
+  <hr>
+  <main>
+    <form action="https://httpbin.org" id="survey-form" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <section id="personal">
+          <label for="name" id="name-label">Name
+            <input type="text" id="name" required placeholder="Please enter your name" />
+          </label>
+          <br>
+          <label for="email" id="email-label">Email
+            <input type="email" id="email" required placeholder="Please enter your email" />
+          </label>
+          <br>
+          <label for="number" id="number-label">Age
+            <input type="number" id="number" required placeholder="Age" min="16" max="100" />
+          </label>
+        </section>
+        <br>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" required>
+            <option value="">(please select one)</option>
+            <option value="1">Social Media</option>
+            <option value="2">Friends</option>
+            <option value="3">Family Members</option>
+            <option value="4">Internet</option>
+            <option value="5">Other</option>
+            <option value="6">Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <section id="preferences">
+          <legend>Preferences</legend>
+          <label for="location" class="radio">Which of these locations is preferrable to you?
+            <p>
+              <input type="radio" name="radio" id="location" value="eziobodo" />Eziobodo
+            </p>
+            <p>
+              <input type="radio" name="radio" id="location" value="umuchima" />Umuchima
+            </p>
+            <p>
+              <input type="radio" name="radio" id="location" value="ihiagwa" />Ihiagwa
+            </p>
+            <p>
+              <input type="radio" name="radio" id="location" value="obinze/futo-road" />Obinze/FUTO Road
+            </p>
+          </label>
+          <br>
+          <label class="checkbox">What perks do you want in a lodge? (select all perks that apply)
+            <p>
+              <input type="checkbox" value="electricity" />Constant electricity
+            </p>
+            <p>
+              <input type="checkbox" value="water" />Constant water supply
+            </p>
+            <p>
+              <input type="checkbox" value="security" />Tight security
+            </p>
+            <p>
+              <input type="checkbox" value="near-to-school" />Nearness to school
+            </p>
+            <p>
+              <input type="checkbox" value="near-to-market" />Nearness to the market
+            </p>
+            <p>
+              <input type="checkbox" value="good-road"/>Good road
+            </p>
+          </label>
+        </section>
+      </fieldset>
+      <br>
+      <fieldset>
+        <section id="other">
+          <legend>Other Relevant Information</legend>
+          <label for="other">Please add other relevant information (optional)
+            <textarea name="other-info" type="text" cols="30" rows="10" id="other" required
+              placeholder="Please add any other relevant info."></textarea>
+          </label>
+        </section>
+      </fieldset>
+      <br>
+      <div class="button">
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset</button>
+      </div>
+    </form>
+  </main>
+  <hr>
+  <footer>
+    <p>Copyright &copy; 2023 ProsperMario Chibuzor</p>
+    <a href="#">Back to Home</a>
+  </footer>
+</body>
+
+</html>
