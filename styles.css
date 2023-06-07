@@ -48,7 +48,7 @@ footer p {
     font-size: 14px;
 }
 button{
-    width: 10%;
+    width: 15%;
     height: 30px;
     text-align: center;
     cursor: pointer;
@@ -104,7 +104,7 @@ a:hover{
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     div{
     display: flex;
     align-items: center;
